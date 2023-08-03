@@ -1,0 +1,426 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.slider{
+    position: relative;
+}
+
+/* .modal{
+    width: 100px;
+    padding: 10px;
+    position: fixed;
+    background: #fff;
+    z-index: 6;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: #ccc 1px solid;
+    top: 50%;
+    
+} */
+
+/* .overlay{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+} */
+
+.slider img{
+    width: 100%;
+    position: relative;
+    
+}
+
+.slider a{
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    left: 45%;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.slider a:hover{
+    cursor: pointer;
+    
+}
+
+.buttonPrev{
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    z-index: 3;
+    padding: 30px;
+    top: 35%;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    left: -25px;
+}
+
+.buttonNext{
+    background-color: rgb(37, 37, 37);
+    position: absolute;
+    z-index: 3;
+    padding: 30px;
+    top: 35%;
+    right: -25px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+}
+
+.buttonPrev:hover{
+    cursor: pointer;
+    transition: all;
+    background: rgb(37, 37, 37, 0.7);
+}
+
+.buttonNext:hover{
+    cursor: pointer;
+    transition: all;
+    background: rgb(37, 37, 37, 0.7);
+}
+
+
+.boxMenu{
+    border-radius: 5px;
+    background: rgb(37, 37, 37);
+    height: 60px;
+    position: relative;
+    z-index: 2;
+    margin-top: -40px;
+}
+
+.boxMenu ul{
+    text-align: center;
+}
+
+.boxMenu ul li{
+    display: inline-table;
+}
+
+.boxMenu ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+    display: block;
+    margin-top: 15px;
+}
+
+.shop h2{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 48px;
+}
+
+.shop p{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.imgShop{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.shop button{
+    background: rgb(37, 37, 37);
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid rgb(37, 37, 37);
+    margin-bottom: 60px;
+}
+
+.shop button:hover{
+    color: #000;
+    background: #fff;
+    transition: all;
+}
+
+.fundoImg{
+    background: rgba(211,211,211, 0.5);
+    padding: 50px 0 50px 50px;
+    width: 95%;
+    margin-left: -15px;
+    margin-bottom: 70px;
+}
+
+.imgAbout{
+    display: block;
+    width: 105%;
+    position: relative;
+}
+
+.sobreFruit h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+.sobreFruit p{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.sobreFruit button{
+    background: rgb(37, 37, 37);
+    color: #fff;
+    font-size: 20px;
+    display: block;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid rgb(37, 37, 37);
+    margin-bottom: 60px;
+    margin-top: 30px;
+}
+
+.sobreFruit button:hover{
+    color: #000;
+    background: #fff;
+    transition: all;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: bold
+}
+
+
+
+.fruitsContent{
+   position: relative;
+   margin-bottom: 20px; 
+   
+}
+
+.fruitsHover{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.fruitsHoverContent{
+    color: #fff;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.fruitsHoverContent p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.fruitsHoverContent button{
+    padding: 20px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    cursor: pointer;
+}
+
+.fruitsHoverContent button:hover{
+    color: #000;
+    background: #fff;
+    transition: all 0.5s;
+}
+
+
+.fruitsContent img{
+    width: 100%;
+}
+
+.fruitsContent:hover .fruitsHover{
+    opacity: 1;
+}
+
+.imgSeta{
+    background: rgb(37, 37, 37);
+    border-radius: 100px;
+    padding: 15px;
+    margin: 100px;
+}
+
+.imgClient{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.imgName{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 30px;
+    font-weight: 200;
+}
+
+.depoimento{
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.textDep{
+    margin-bottom: 90px;
+}
+
+.aspasLeft{
+    display: block;
+    position: absolute;
+    left: 400px;
+    
+}
+
+.aspasRight{
+    display: block;
+    position: absolute;
+    right: 35%;
+    top: 0;
+}
+
+.form input{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 25%); 
+}
+
+.form textarea{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+    padding: 60px;
+    border: none;
+    box-shadow: 0 0 5px 0 rgb(0 0 0 / 25%);
+}
+
+.button{
+    background: orange;
+    padding: 10px 60px;
+    color: #fff;
+    border: 1px solid orange;
+    cursor: pointer; 
+    display: block;
+    margin-top: 30px;
+}
+
+.imgMap{
+    width: 100%;
+}
+
+.footer{
+    background: rgb(37, 37, 37);
+    color: #fff;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+h4{
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+.contato{
+    margin-bottom: 40px;
+}
+
+.contato ul{
+    text-align: center;
+}
+
+.contato ul li{
+    display: inline;
+}
+
+.contato ul li a{
+    color: #fff;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.boxEmail{
+    text-align: center;
+    
+}
+
+.boxEmail form{
+    display: inline-flex;
+}
+
+.boxEmail input{
+    padding: 12px 100px;
+    border: none;
+    color: #fff;
+    margin-left: 100px;
+}
+
+.boxEmail button{
+    padding: 10px 200px;
+    background: orange;
+    
+}
+
+.imgSocial ul{
+    text-align: right;
+}
+
+.imgSocial ul li{
+    display: inline-block;
+    position: relative;
+    right: 55%;
+    
+}
+
+.imgSocial ul li a{
+    text-decoration: none;
+}
+
+.imgSocial ul li a img{
+    margin-bottom: 60px;
+    
+}
+
+.rodape{
+    text-align: center;
+    height: 40px;
+}
+
+
+
+
+
